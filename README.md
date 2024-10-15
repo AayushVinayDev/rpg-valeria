@@ -10,7 +10,7 @@ The game uses a client-server model with the server authoritative over game stat
 
 The game architecture is designed for scalability and performance, with a focus on efficient networking and state synchronization between the client and server.
 
-![Architecture Diagram](github_assets/arch_basic.svg)
+![Architecture Diagram](https://mermaid.ink/svg/pako:eNp9k11vmzAUhv8Kcm9JBIEVsKpJ5aM0VSdNy6RJhV4YOBC3gCNj2mRR_vsA09ZtpPnKz2O_R0cHfEQ5KwBhVHGy22q_w7TVhtX1mRRBTaEVUo7rOvkDmeZz9toBf_zwfhLtc1LTrOfLp045CMbAhuXPIOZiymGYVL9-Bp89tEXafuliA_wF-EcuSmI2S6XaTRJlVERtRVtQdKx0cJa5lR2c-XUSkwa0e1bRXNF3yT28QB36581ea4vFd82X4E8QqDBPNpgglhBOcCshmuBGhViFT9fWEtba1Uh37xMThxrmeWolrWt8UXql3gnOngFfWJY17xevtBBbbO_2alCOYQ5m2f-DSEcN8IbQYvh9jmOZFIktNJAiPGwLKElfixSl7Wm4SnrBNoc2R1jwHnTEWV9tES5J3Q3U7woiIKRk-N7Nu92R9oGx5i0yIMJHtEd4YS6_uYbtmsal53iW7dmujg4Im87SM0zHcB3Hu3RNy7BPOvo7lTCXxmrleSvDtF13DDg6goIKxn_IBzC9g9M_3OHiJQ)
 
 ### Client-Server Architecture
 
