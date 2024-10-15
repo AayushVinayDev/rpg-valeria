@@ -1,0 +1,42 @@
+graph TD
+    subgraph Client
+        A[Web Browser]
+        B[Excalibur.js]
+        C[WebSocket Client]
+        D[gRPC Client]
+    end
+
+    LB[Load Balancer]
+
+    subgraph Server Cluster
+        E1[Go Server 1]
+        E2[Go Server 2]
+        E3[Go Server N]
+    end
+
+    subgraph Shared Resources
+        F[EbitEngine]
+        G[WebSocket Server]
+        H[gRPC Server]
+        I[Game Logic]
+        J[LevelDB]
+        K[Redis Cache]
+        L[Message Queue]
+    end
+
+    A --> B
+    B --> C
+    B --> D
+    C --> LB
+    D --> LB
+    LB --> E1
+    LB --> E2
+    LB --> E3
+    E1 & E2 & E3 --> F & G & H & I
+    I <--> J
+    I <--> K
+    I <--> L
+
+    style Client fill:#f9f,stroke:#333,stroke-width:4px
+    style Server Cluster fill:#bbf,stroke:#333,stroke-width:4px
+    style Shared Resources fill:#bfb,stroke:#333,stroke-width:4px

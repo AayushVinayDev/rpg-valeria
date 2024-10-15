@@ -1,0 +1,30 @@
+graph TD
+    subgraph Client
+        A[Web Browser]
+        B[Excalibur.js]
+        C[WebSocket Client]
+        D[gRPC Client]
+    end
+
+    subgraph Server
+        E[Go Server]
+        F[EbitEngine]
+        G[WebSocket Server]
+        H[gRPC Server]
+        I[Game Logic]
+        J[LevelDB]
+    end
+
+    A --> B
+    B --> C
+    B --> D
+    C --> G
+    D --> H
+    E --> F
+    E --> G
+    E --> H
+    E --> I
+    I <--> J
+
+    style Client fill:#f9f,stroke:#333,stroke-width:4px
+    style Server fill:#bbf,stroke:#333,stroke-width:4px
